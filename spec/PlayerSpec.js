@@ -1,3 +1,4 @@
+// Describe is used to identify a suite, which is a group of related specs.
 describe("Player", function() {
   var player;
   var song;
@@ -7,8 +8,12 @@ describe("Player", function() {
     song = new Song();
   });
 
+  // it - identify a specification, or a spec
+  // spec - container for a test, a way to identify the exact feature we`ar testing
   it("should be able to play a Song", function() {
     player.play(song);
+    // expect - spec return true === test pass
+    // expect - spec return false === test failes
     expect(player.currentlyPlayingSong).toEqual(song);
 
     //demonstrates use of custom matcher
