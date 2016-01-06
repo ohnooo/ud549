@@ -3,23 +3,23 @@
 function AddressBook(){
 	this.contacts = [];
 
-	// this.addContact = function(contact){
-	// 	this.contacts.push(contact);
-	// };
+	this.addContact = function(contact){
+		this.contacts.push(contact);
+	};
 
-	// this.getContact = function(index){
-	// 	return this.contacts[index];
-	// }
+	this.getContact = function(index){
+		return this.contacts[index];
+	}
 };
 
-AddressBook.prototype.addContact = function(contact){
-	this.contacts.push(contact);
-};
+// AddressBook.prototype.addContact = function(contact){
+// 	this.contacts.push(contact);
+// };
 
-AddressBook.prototype.getContact = function(index){
-	return this.contacts[index];
-};
+// AddressBook.prototype.getContact = function(index){
+// 	return this.contacts[index];
+// };
 
-AddressBook.prototype.deleteContact = function(index){
-	this.contacts.splice(index, 1);
-}
+// AddressBook.prototype.deleteContact = function(index){
+// 	this.contacts.splice(index, 1);
+// }
