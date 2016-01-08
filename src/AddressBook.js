@@ -25,7 +25,7 @@ AddressBook.prototype.deleteContact = function(index){
 	this.contacts.splice(index, 1);
 }
 
-AddressBook.prototype.getInitialContacts = function(){
+AddressBook.prototype.getInitialContacts = function(cb){
 	var self = this;
 
 	setTimeout(function(){
